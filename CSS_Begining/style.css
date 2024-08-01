@@ -1,0 +1,37 @@
+
+.navbar{
+    display:flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    background-color:thistle;
+    padding: 10px 20px;;
+
+
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+.navlist{
+    display:flex;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+.navlist li{
+    margin-right:20px;
+
+}
+.navlist li a:hover{
+    color:darkslategrey;
+}
+img{
+    
+    align-items: center;
+}
+div{
+    display: flex;
+    justify-content: space-around;
+}
