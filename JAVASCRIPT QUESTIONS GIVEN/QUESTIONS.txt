@@ -1,0 +1,21 @@
+1. Create a JavaScript program to compute a student's internal marks based on the provided criteria. Prompt the user to input CIA1, CIA2, CIA3, and Assignment marks. Ensure that the CIA marks are within the valid range of 0 to 50, and the assignment marks are within the range of 0 to 10. Calculate the internal mark by selecting the best two out of the three CIA marks, multiplying each by two, dividing the result by 5, and then adding the assignment marks. Implement validation to display an appropriate error message if any input mark falls outside the specified range.
+2. Create a JavaScript code to implement form validation using regular expressions, considering the following conditions: Name, email, password, and phone fields must not be left empty. Ensure that the form does not allow submissions with empty values for these fields
+
+3. Write a JavaScript function to calculate the average salary of employees in a company. The function should take an array of employee objects with the following properties:
+* name
+* salary
+* otherAllowances (including PF, HRA, etc.)
+The function should also calculate the number of employees in each salary slab:
+* 0-20000
+* 20001-40000
+* 40001-60000
+* 60001-80000
+* Above 80000
+ Additionally, the function should calculate the total and average PF (Provident Fund) of all employees. Assume PF is 12% of the salary.
+ The function should also calculate the total and average HRA (House Rent Allowance) of all employees. Assume HRA is 30% of the salary.
+ The function should return an object containing:
+* Average salary
+* Salary slabs with employee count
+* Average PF
+* Average HRA
+* Average other allowances

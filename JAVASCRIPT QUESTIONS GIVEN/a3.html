@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculation</title>
+</head>
+<body>
+    <h1>Salary Calculation</h1>
+    <script>
+        function calculateAverageSalary(employees) {
+            let totalSalary = 0;
+            let totalPF = 0;
+            let totalHRA = 0;
+            let totalOtherAllowances = 0;
+
+            let salarySlabs = {
+                "0-20000": 0,
+                "20001-40000": 0,
+                "40001-60000": 0,
+                "60001-80000": 0,
+                "Above 80000": 0
+            };
+
+            employees.forEach(employee => {
+                const salary = employee.salary;
+                totalSalary += salary;
+
+                const PF = salary * 0.12;
+                totalPF += PF;
+
+                const HRA = salary * 0.30;
+                totalHRA += HRA;
+
+                totalOtherAllowances += employee.otherAllowances;
+
+                if (salary <= 20000) {
+                    salarySlabs["0-20000"]++;
+                } else if (salary <= 40000) {
+                    salarySlabs["20001-40000"]++;
+                } else if (salary <= 60000) {
+                    salarySlabs["40001-60000"]++;
+                } else if (salary <= 80000) {
+                    salarySlabs["60001-80000"]++;
+                } else {
+                    salarySlabs["Above 80000"]++;
+                }
+            });
+
+            const numberOfEmployees = employees.length;
+            const averageSalary = totalSalary / numberOfEmployees;
+            const averagePF = totalPF / numberOfEmployees;
+            const averageHRA = totalHRA / numberOfEmployees;
+            const averageOtherAllowances = totalOtherAllowances / numberOfEmployees;
+
+            return {
+                averageSalary: averageSalary,
+                salarySlabs: salarySlabs,
+                averagePF: averagePF,
+                averageHRA: averageHRA,
+                averageOtherAllowances: averageOtherAllowances
+            };
+        }
+
+        const employees = [
+            { name: "Alice", salary: 25000, otherAllowances: 5000 },
+            { name: "Bob", salary: 45000, otherAllowances: 7000 },
+            { name: "Charlie", salary: 55000, otherAllowances: 8000 },
+            { name: "David", salary: 65000, otherAllowances: 10000 },
+            { name: "Eve", salary: 85000, otherAllowances: 12000 }
+        ];
+
+        const result = calculateAverageSalary(employees);
+        console.log(result);
+    </script>
+</body>
+</html>

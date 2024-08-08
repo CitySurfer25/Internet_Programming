@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compute Internal Marks</title>
+    <script>
+        
+        function computeInternalMarks() {
+            
+            let cia1 = prompt("Enter CIA1 marks (0-50):");
+            let cia2 = prompt("Enter CIA2 marks (0-50):");
+            let cia3 = prompt("Enter CIA3 marks (0-50):");
+            let assignment = prompt("Enter Assignment marks (0-10):");
+
+            
+            cia1 = Number(cia1);
+            cia2 = Number(cia2);
+            cia3 = Number(cia3);
+            assignment = Number(assignment);
+
+            
+            if (cia1 < 0 || cia1 > 50 || cia2 < 0 || cia2 > 50 || cia3 < 0 || cia3 > 50 || assignment < 0 || assignment > 10) {
+                alert("Error: Marks are out of the valid range.");
+                return; 
+            }
+
+           
+            let ciaMarks = [cia1, cia2, cia3];
+
+            ciaMarks.sort((a, b) => b - a);
+
+            
+            let bestCia1 = ciaMarks[0];
+            let bestCia2 = ciaMarks[1];
+
+            
+            let internalMark = ((bestCia1 + bestCia2) * 2 / 5) + assignment;
+
+            alert("The internal mark is: " + internalMark);
+        }
+
+        
+        window.onload = function() {
+            computeInternalMarks();
+        };
+    </script>
+</head>
+<body>
+    <h1>Compute Internal Marks</h1>
+</body>
+</html>
