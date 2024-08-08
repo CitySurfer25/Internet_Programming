@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Implementation with Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validation.js" defer></script>
+</head>
+<body style="background-color: skyblue;">
+
+    <center>
+        <h1>Javascript Validation</h1>
+    </center>
+    <center>
+        <div class="fform">
+            <form id="myForm" action="index2.html" method="get">
+
+                <table>
+                    <tr>
+                       <td>
+                        <label for="name">Username</label>   
+                       </td>
+                       <td>
+                        <input id="name" name="name" placeholder="Name" type="text">
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>
+                         <label for="email">Email</label>   
+                        </td>
+                        <td>
+                         <input id="email" name="email" placeholder="Mail" type="email">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                         <label for="Pnumber">Phone number</label>   
+                        </td>
+                        <td>
+                         <input id="Pnumber" name="Pnumber" placeholder="Phone Number" type="number">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                         <label for="password">Password</label>   
+                        </td>
+                        <td>
+                         <input id="password" name="password" placeholder="Password" type="password">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                            <label>Gender</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label>
+                        
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                            <label for="hobby">Hobbies</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="sports" name="hobby" value="Sports">
+                            <label for="sports">Sports</label>
+                            <input type="checkbox" id="reading" name="hobby" value="Reading">
+                            <label for="reading">Reading</label>
+                            <input type="checkbox" id="gym" name="hobby" value="Gym">
+                            <label for="gym">Gym</label> 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                            <label for="country">Country</label>
+                        </td>
+                        <td>
+                            <select id="country" name="country">
+                                <option value="">Select Country</option>
+                                <option value="India">India</option>
+                                <option value="USA">USA</option>
+                                <option value="UK">UK</option>
+                                <option value="Canada">Canada</option>
+                            </select>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                            <label for="comments">Comments</label>
+                        </td>
+                        <td>
+                            <textarea id="comments" name="comments"></textarea>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                            <label>
+                                <input id="terms" name="terms" type="checkbox">
+                                I agree to the terms and conditions
+                            </label>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                            <center>
+                                <input type="submit" value="Submit">
+                            </center>
+                        </td>
+                     </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
