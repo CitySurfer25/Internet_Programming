@@ -1,0 +1,78 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+
+  .navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    justify-content: space-between;
+    background-color: black;
+    
+    top: 0px;
+    padding: 10px 20px;
+  }  
+
+.navlist{
+    display:flex;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+} 
+
+
+.navlist li{
+    margin-right:20px;
+
+}
+.navlist li a:hover{
+    color:darkslategrey;
+}
+
+
+  body{
+    background-color: blanchedalmond;
+  }
+
+  h1{
+    color: white;
+
+  }
+
+  h2{
+    color:azure;
+  }
+  .rajdhani-light {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .rajdhani-regular {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rajdhani-medium {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .rajdhani-semibold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .rajdhani-bold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  

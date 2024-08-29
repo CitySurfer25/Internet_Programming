@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+
+<peoples>
+    <people>
+    <name>Sabesh</name>
+    <place>Thanjavur</place>
+    </people>
+
+    <people>
+    <name>Swathi</name>
+    <place>Chennai</place>
+    </people>
+
+
+    <people>
+    <name>Harshini</name>
+    <place>Trichy</place>
+    </people>
+
+
+    <people>
+    <name>Nithish</name>
+    <place>Trichy</place>
+    </people>
+
+
+    <people>
+    <name>Roshini</name>
+    <place>Thanjavur</place>
+    </people>
+
+
+</peoples>
+

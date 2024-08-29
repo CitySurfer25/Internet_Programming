@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student>
+    <name>Vinayaga</name>
+    <subject1>85</subject1>
+    <subject2>90</subject2>
+    <subject3>78</subject3>
+    <subject4>92</subject4>
+    <subject5>88</subject5>
+  </student>
+  <student>
+    <name>Thrun</name>
+    <subject1>90</subject1>
+    <subject2>85</subject2>
+    <subject3>95</subject3>
+    <subject4>88</subject4>
+    <subject5>92</subject5>
+  </student>
+
+
+    <student>
+    <name>Ram</name>
+    <subject1>5</subject1>
+    <subject2>50</subject2>
+    <subject3>38</subject3>
+    <subject4>60</subject4>
+    <subject5>88</subject5>
+  </student>
+</students>
